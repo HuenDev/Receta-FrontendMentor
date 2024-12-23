@@ -1,0 +1,199 @@
+/* Globales */
+:root
+{
+    --color-white: hsl(0, 0%, 100%);
+    --color-stone-100: hsl(30, 54%, 90%);
+    --color-stone-150: hsl(30, 18%, 87%);
+    --color-stone-600: hsl(30, 10%, 34%);
+    --color-stone-900: hsl(24, 5%, 18%);
+    --color-srown-800: hsl(14, 45%, 36%);
+    --color-sose-800: hsl(332, 51%, 32%);
+    --color-sose-50: hsl(330, 100%, 98%);
+}
+
+@font-face
+{
+    font-family: 'YoungSerif-Regular';
+    src: url('../assets/fonts/young-serif/YoungSerif-Regular.ttf') format('truetype');
+}
+
+@font-face
+{
+    font-family: 'Outfit-VariableFont';
+    src: url('../assets/fonts/outfit/Outfit-VariableFont_wght.ttf') format('truetype');
+}
+
+
+html
+{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after
+{
+    box-sizing: inherit;
+}
+
+img
+{
+    max-width: 100%;
+}
+
+h1
+{
+    font-size: 3.3rem;
+    color: var(--color-stone-900);
+}
+
+h2
+{
+    font-family: 'Outfit-VariableFont', sans-serif;
+    font-size: 1.8rem;
+    color: var(--color-sose-800);
+}
+
+h3
+{
+    font-size: 2.3rem;
+    font-weight: normal;
+    color: var(--color-srown-800);
+}
+
+h1,
+h3
+{
+    font-family: 'YoungSerif-Regular', sans-serif;
+
+}
+
+p,
+li,
+table
+{
+    font-family: 'Outfit-VariableFont', sans-serif;
+    font-size: 1.6rem;
+    color: var(--color-stone-600);
+    line-height: 2.5;
+
+}
+
+@media (min-width: 480px)
+{
+    .contenedor
+    {
+        width: 60%;
+        margin: 5rem auto;
+        background-color: white;
+        padding: 2.2rem;
+        border-radius: 2rem;
+    }
+
+    body
+    {
+        background-color: var(--color-stone-100)
+    }
+
+    img
+    {
+        width: 100%;
+        border-radius: 1rem;
+
+    }
+}
+
+li
+{
+    list-style-position: outside;
+    padding-left: 1.5rem;
+}
+
+/* Footer */
+
+.attribution
+{
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a
+{
+    color: hsl(228, 45%, 44%);
+}
+
+/* Secciones */
+.seccion
+{
+    border-bottom: 1px solid var(--color-stone-150);
+    padding-bottom: 3rem;
+}
+
+/* Viñetas */
+
+.instrucciones__lista::marker
+{
+    font-weight: 700;
+    color: var(--color-sose-800);
+}
+
+.preparacion-lista::marker,
+.ingredientes__lista::marker
+{
+    font-size: 1.1rem;
+}
+
+.preparacion-lista::marker
+{
+    color: var(--color-sose-800);
+}
+
+.ingredientes__lista::marker
+{
+    color: var(--color-srown-800);
+}
+
+
+/* Preparación */
+.seccion--tiempo
+{
+    background-color: var(--color-sose-50);
+    padding: 1.5rem 1rem;
+    margin: 0 .5rem;
+    border-radius: 1rem;
+}
+
+.preparacion-lista__span
+{
+    font-weight: bold;
+}
+
+.instrucciones__lista--span
+{
+    font-weight: 700;
+}
+
+/* Tabla */
+
+.nutrientes__tabla
+{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.nutrientes__tabla__datos
+{
+    border-bottom: 1px solid var(--color-stone-150);
+}
+
+.nutrientes__tabla__datos:last-of-type
+{
+    border: none;
+}
+
+.nutrientes__tabla__datos--negrita
+{
+    font-weight: bold;
+    color: var(--color-srown-800);
+}
